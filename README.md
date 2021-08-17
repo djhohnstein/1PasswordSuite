@@ -1,5 +1,9 @@
 # 1PasswordSuite
 
+## Blog
+
+https://posts.specterops.io/1password-secret-retrieval-methodology-and-implementation-6a9db3f3c709
+
 ## 1PasswordExtract
 
 This .NET application is built on the same version of the CLR (4.7.2) the latest 1Password binary uses at the time of upload (8/13/21). This binary gets function pointers to various critical functions responsible for decrypting secrets within the 1Password SQLite database and waits until the 1Password application is unlocked by the user. Once unlocked, it writes the results as a JSON array to C:\Users\Public\1Password.log for you to view and parse.
